@@ -1,0 +1,9 @@
+# View git config
+git config [--global|--system|--local] -l
+
+# Modify git config
+git config [--global|--system|--local] -e
+
+# Add git config
+git config --global alias.CMD "COMANDO"
+es: git config --global alias.a "add -a"

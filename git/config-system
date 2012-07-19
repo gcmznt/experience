@@ -1,0 +1,7 @@
+# Use alias for common repos
+[url "git@bitbucket.org:giko/"]
+    insteadOf = "bb:"
+
+# Correct automatically wrong typed commands
+[help]
+    autocorrect = 30  # deciseconds
