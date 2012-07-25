@@ -1,0 +1,11 @@
+# Rename your current master branch:
+git branch -m crazyexperiment
+
+# Check out your good commit:
+git checkout c2e7af2b51
+
+# Make your new master branch here:
+git checkout -b master
+
+# Now you still have your crazy experiment around if you want to look at it later, but your master branch is back at your last known good point, ready to be added to. If you really want to throw away your experiment, you can use:
+git branch -D crazyexperiment

@@ -1,0 +1,28 @@
+# Proteggere cartella con pwd
+AuthType Basic
+AuthName "Restricted Files"
+AuthUserFile /var/www/html/.htpasswd
+Require valid-user
+
+# Accetta solo un determinato utente
+Require user username
+
+# Accetta solo certi ip
+Satisfy Any
+Allow from xxx.xxx.xxx.xxx
+
+# Rimuovere protezione
+Satisfy Any
+Allow from all
+
+# Rimuovere protezione da un file
+<Files file.html>
+    Satisfy Any
+    Allow from all
+</Files>
+
+# Rimuovere protezione da tipi di file
+<FilesMatch "\.(gif|jpe?g|png)$">
+    Satisfy Any
+    Allow from all
+<FilesMatch>
