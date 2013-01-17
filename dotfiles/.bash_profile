@@ -8,10 +8,7 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
-if [ -f $DIR/z/z.sh ];
-then
-    . $DIR/z/z.sh
-fi
+[ -r "$DIR/z/z.sh" ] && source "$DIR/z/z.sh"
 
 # init rvm
 # source ~/.rvm/scripts/rvm
