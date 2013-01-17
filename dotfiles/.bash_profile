@@ -8,7 +8,7 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
-if [ -f $DIR/../z/z.sh ];
+if [ -f $DIR/z/z.sh ];
 then
     . $DIR/z/z.sh
 fi
