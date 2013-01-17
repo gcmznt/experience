@@ -1,0 +1,3 @@
+[submodule "dotfiles/z"]
+	path = dotfiles/z
+	url = https://github.com/rupa/z

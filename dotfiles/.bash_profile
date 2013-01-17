@@ -10,7 +10,7 @@ unset file
 # init z   https://github.com/rupa/z
 if [ -f $DIR/../z/z.sh ];
 then
-    . $DIR/../z/z.sh
+    . $DIR/z/z.sh
 fi
 
 # init rvm
