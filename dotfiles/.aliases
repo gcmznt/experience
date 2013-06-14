@@ -35,9 +35,6 @@ alias l="ls -l ${colorflag}"
 # List all files colorized in long format, including dot files
 alias la="ls -la ${colorflag}"
 
-alias ad="adb forward tcp:9222 localabstract:chrome_devtools_remote && start http://localhost:9222"
-alias ad-kill="adb kill-server"
-
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
@@ -120,8 +117,12 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
-
 # Servers
 alias pyserv='python -m SimpleHTTPServer'
+alias pyserv3='python -m http.server'
 alias phpserv='php -S localhost:8000'
 alias pp='export PYTHONPATH=`pwd`; echo "PYTHONPATH set to `pwd`"'
+
+# Android debug
+alias ad="adb forward tcp:9222 localabstract:chrome_devtools_remote && start http://localhost:9222"
+alias ad-kill="adb kill-server"
