@@ -1,0 +1,6 @@
+#local
+git branch rm BRANCHNAME
+
+#remote
+git push origin --delete BRANCHNAME
+git push origin :BRANCHNAME
