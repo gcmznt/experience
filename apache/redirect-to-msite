@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Check if 'desktop' is in query string to avoid redirect
+RewriteCond %{QUERY_STRING} !^desktop
+
+# Check common mobile identifiers in the user agent
+RewriteCond %{HTTP_USER_AGENT} "android|blackberry|googlebot-mobile|iemobile|iphone|ipod|#opera mobile|palmos|webos" [NC]
+
+# Redirect the request to the msite with the full uri
+RewriteRule ^ http://m.example.com%{REQUEST_URI} [L,R=302]
