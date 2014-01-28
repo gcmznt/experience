@@ -1,0 +1,11 @@
+infile = open('path/to/input/file')
+outfile = open('path/to/input/file', 'w')
+
+replacements = {'zero':'0', 'temp':'bob', 'garbage':'nothing'}
+
+for line in infile:
+    for src, target in replacements.iteritems():
+        line = line.replace(src, target)
+    outfile.write(line)
+infile.close()
+outfile.close()

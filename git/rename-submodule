@@ -1,0 +1,15 @@
+# Edit .gitmodules with new path
+vi .gitmodules
+git add .gitmodules
+
+# Move the module folder
+mv path/submodule new-path/new-module-name
+
+# Start tracking new folder
+git add new-path/new-module-name
+
+# Remove old path
+git rm --cached path/submodule
+
+# Commit changes
+git commit -m 'Moved submodule'
