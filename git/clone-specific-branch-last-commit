@@ -1,0 +1,8 @@
+# Clone only last commit
+git clone --depth 1 repository
+
+# Clone specific branch or tag
+git clone --branch 3.8.1 repository
+
+# Both
+git clone --depth 1 --branch 3.8.1 repository
