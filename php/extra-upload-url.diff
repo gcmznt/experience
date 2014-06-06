@@ -1,0 +1,15 @@
+define('WP_UPLOAD_URL', 'http://url.com/assets/uploads');
+
+
+
+--- a/wp-includes/functions.php
++++ b/wp-includes/functions.php
+@@ -1575,7 +1575,7 @@ function wp_upload_dir( $time = null ) {
+ 
+ 	if ( !$url = get_option( 'upload_url_path' ) ) {
+ 		if ( empty($upload_path) || ( 'wp-content/uploads' == $upload_path ) || ( $upload_path == $dir ) )
+-			$url = WP_CONTENT_URL . '/uploads';
++			$url = (defined('WP_UPLOAD_URL')) ? WP_UPLOAD_URL : WP_CONTENT_URL . '/uploads';
+ 		else
+ 			$url = trailingslashit( $siteurl ) . $upload_path;
+ 	}
