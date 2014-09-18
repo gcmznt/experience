@@ -1,0 +1,4 @@
+$ du -a /var | sort -n -r | head -n 10
+
+$ cd /path/to/some/where
+$ du -hsx * | sort -rh | head -10
