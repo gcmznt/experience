@@ -1,0 +1,6 @@
+sendmail -t
+To: giacomo.zinetti@giko.it
+From: test@giko.it
+Subject: Testing 123
+Test message
+.
