@@ -1,22 +1,15 @@
-# Create tar
+# Create archive
 $ tar -cvf file.tar path/to/compress
-
-# -c to compress
-# -v verbose
-# -f use file named as param passed
-# add -z to compress .tar.gz
+$ tar -czvf file.tar.gz path/to/compress
 
 
-# Extract tar
+# Extract
 $ tar -xvf file.tar
-
-# -x to extract
-# add -z to extract from .tar.gz
+$ tar -xzvf file.tar.gz
 
 
-# View content of a .tar file
-$ tar -tvf filename.tar
-
-# -t to list the content of the archive
-# add -z to filter .tar.gz
-# add -j to filter .tar.bz2
+# View content of an archive
+$ tar -tvf file.tar
+$ tar -tzvf file.tar.gz
+$ tar -tjvf file.tar.bz2
+$ unzip -vl file.zip
