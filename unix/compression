@@ -2,6 +2,8 @@
 $ tar -cvf file.tar path/to/compress
 $ tar -czvf file.tar.gz path/to/compress
 
+# To avoid ._files when using tar on macosx
+$ COPYFILE_DISABLE=1 tar ... 
 
 # Extract
 $ tar -xvf file.tar
