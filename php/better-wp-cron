@@ -1,0 +1,5 @@
+# WP setting
+define('DISABLE_WP_CRON', true);
+
+# setup the cronjob (every 5 minutes or when the site need it)
+*/5 * * * * wget -q -O - "http://.../wp-cron.php?doing_wp_cron=`date +\%s`" > /dev/null 2>&1
