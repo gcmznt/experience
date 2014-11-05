@@ -1,0 +1,6 @@
+hostname -A > /etc/mailname
+
+vi /etc/postfix/main.cf
+myorigin = /etc/mailname
+
+/etc/init.d/postfix restart
