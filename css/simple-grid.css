@@ -1,0 +1,15 @@
+[class*="gk-fract"]{margin-right:4%;float:left;}
+[class*="gk-fract"]:last-child{margin-right:0;}
+.gk-fract11{width:100%;}
+.gk-fract12{width:48%;}
+.gk-fract13{width:30.66%;}
+.gk-fract23{width:65.33%;}
+.gk-fract14{width:22%;}
+.gk-fract34{width:74%;}
+.gk-fract15{width:16.8%;}
+.gk-fract25{width:37.6%;}
+.gk-fract35{width:58.4%;}
+.gk-fract45{width:79.2%;}
+.gk-fract16{width:13.33%;}
+.gk-fract56{width:82.66%;}
+.gk-row{margin-bottom:1em;overflow:hidden;}
