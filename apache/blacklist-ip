@@ -1,0 +1,6 @@
+<Location />
+  order allow,deny
+  deny from 255.0.0.0
+  deny from 123.45.6.
+  allow from all
+</Location>
