@@ -7,3 +7,12 @@ git config [--global|--system|--local] -e
 # Add git config
 git config --global alias.CMD "COMANDO"
 es: git config --global alias.a "add -a"
+
+
+# From http://wesbos.com/git-hot-tips/
+git add -p
+git log -5 --pretty --oneline
+git shortlog -sn
+git log --all --graph --decorate --oneline --simplify-by-decoration
+git diff --shortstat "@{0 day ago}"
+git reflog
