@@ -3,11 +3,13 @@
     name = Giacomo Zinetti
     email = giacomo.zinetti@giko.it
 
-# better log
 [alias]
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
     co = checkout
+    br = branch
+    ci = commit
+    st = status
     df = "!git diff --color $@ | diff-so-fancy"
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 # Use alias for common repos
 [url "git@bitbucket.org:giacomozinetti/"]
