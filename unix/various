@@ -1,0 +1,6 @@
+// find all files of a type and sum sizes
+find . -iname "*.js" -print0 | xargs -0 du -csh;
+
+// concatenate all files
+find . -iname "*.js" -type f -print0 | xargs -0 cat > out.txt
+find . -iname "*.js" -type f -print0 | xargs -0 sed -e '$s/$/\n/' > out.txt
