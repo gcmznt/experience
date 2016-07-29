@@ -15,3 +15,6 @@ $ tar -tvf file.tar
 $ tar -tzvf file.tar.gz
 $ tar -tjvf file.tar.bz2
 $ unzip -vl file.zip
+
+# Compress every element in his own file
+$ for i in *; do tar -czf $i.tar.gz $i; done
